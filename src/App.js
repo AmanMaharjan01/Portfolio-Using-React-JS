@@ -34,7 +34,7 @@ function App() {
                 I'm a Web and UI/UX Designer, and also passionate on doing Web
                 Development.
               </p>
-              <button id="hire">Hire Me</button>
+              
             </div>
           </div>
           <div className="photo">
