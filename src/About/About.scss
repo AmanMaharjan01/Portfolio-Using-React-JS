@@ -1,0 +1,12 @@
+.about {
+  width: 100%;
+  min-height: 750px;
+}
+
+.about .content {
+  width: 70%;
+  height: 400px;
+  margin: 100px auto;
+  border: 1px solid red;
+  display: flex;
+}

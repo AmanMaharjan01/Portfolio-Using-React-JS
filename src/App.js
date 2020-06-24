@@ -1,24 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, createContext } from "react";
+import "./App.css";
+import Nav from "./Nav/Nav";
+import Sidebar from "./sidebar/Sidebar";
+import About from "./About/About";
+
+export const UserContext = createContext();
 
 function App() {
+  const [classname, setClassname] = useState("sidebar-open");
+
+  const opensidebar = () => {
+    setClassname("sidebar-open");
+  };
+
+  const closesidebar = () => {
+    setClassname("sidebar-close");
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserContext.Provider value={classname}>
+        <Nav open={opensidebar} />
+        <Sidebar close={closesidebar} />
+      </UserContext.Provider>
+      <div className="front-page">
+        <div className="content">
+          <div className="text">
+            <div className="desc">
+              <p id="hello">Hello,</p>
+              <span className="head">I'm Aman</span>
+              <p id="about">
+                I'm a Web and UI/UX Designer, and also passionate on doing Web
+                Development.
+              </p>
+              <button id="hire">Hire Me</button>
+            </div>
+          </div>
+          <div className="photo">
+            <img src="img/me.jpg" alt="me" id="me" />
+          </div>
+        </div>
+      </div>
+      <About />
     </div>
   );
 }

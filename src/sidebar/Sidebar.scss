@@ -1,0 +1,45 @@
+.sidebar {
+  width: 5rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+
+.btn {
+  width: 83%;
+  padding: 15px 20px;
+}
+
+.btn .icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menus ul li {
+  list-style: none;
+  padding: 20px 10px 20px 20px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.menus ul li img {
+  width: 35px;
+  height: 35px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.menus ul li img:hover {
+  transform: scale(1.1);
+}
+
+.sidebar-close {
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+
+.sidebar-open {
+  transform: translateX(0);
+  transition: 0.3s;
+}

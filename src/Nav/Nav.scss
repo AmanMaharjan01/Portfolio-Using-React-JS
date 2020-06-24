@@ -1,0 +1,81 @@
+.nav {
+  width: 100%;
+  padding: 10px 0px 10px 20px;
+}
+
+.nav .content {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav .content img {
+  padding-right: 10px;
+  display: inline;
+}
+
+.nav .content .contact {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .content img {
+  display: inline-block;
+}
+
+.nav .content .contact .text {
+  display: none;
+  color: #1f204e;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.nav .content .contact img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  padding-left: 10px;
+}
+
+.nav .content .contact:hover {
+  width: 120px;
+}
+
+.nav .content .contact:hover .text {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.nav .content .contact:hover img {
+  padding-left: 2px;
+}
+.nav #logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav .icon {
+  position: absolute;
+  left: 2%;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav .content #twitter,
+#linkedin {
+  cursor: pointer;
+}
