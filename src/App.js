@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src="/img/background1.jpg" alt="bgimg" />
+      <img src="img/background1.jpg" alt="bgimg" />
       <UserContext.Provider value={classname}>
         <Nav open={opensidebar} />
         <Sidebar close={closesidebar} />
